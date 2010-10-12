@@ -36,12 +36,12 @@
         <div class="container rounded">
             <div class="row">
                 <div class="left">Hits</div>
-                <div class="middle"><?php echo Library_Analysis::hitResize($stats['delete_hits']); ?></div>
+                <div class="middle"><?php echo Library_Analysis::hitResize(isset($stats['delete_hits']) ? $stats['delete_hits'] : null); ?></div>
                 <div class="right">[<?php echo $stats['delete_hits_percent']; ?>%]</div>
             </div>
             <div class="row">
                 <div class="left">Miss</div>
-                <div class="middle"><?php echo Library_Analysis::hitResize($stats['delete_misses']); ?></div>
+                <div class="middle"><?php echo Library_Analysis::hitResize(isset($stats['delete_misses']) ? $stats['delete_misses'] : null); ?></div>
                 <div class="right">[<?php echo $stats['delete_misses_percent']; ?>%]</div>
             </div>
             <div class="row">
@@ -55,17 +55,17 @@
         <div class="container rounded">
             <div class="row">
                 <div class="left">Hits</div>
-                <div class="middle"><?php echo Library_Analysis::hitResize($stats['cas_hits']); ?></div>
+                <div class="middle"><?php echo Library_Analysis::hitResize(isset($stats['cas_hits']) ? $stats['cas_hits'] : null); ?></div>
                 <div class="right">[<?php echo $stats['cas_hits_percent']; ?>%]</div>
             </div>
             <div class="row">
                 <div class="left">Miss</div>
-                <div class="middle"><?php echo Library_Analysis::hitResize($stats['cas_misses']); ?></div>
+                <div class="middle"><?php echo Library_Analysis::hitResize(isset($stats['cas_misses']) ? $stats['cas_misses'] : null); ?></div>
                 <div class="right">[<?php echo $stats['cas_misses_percent']; ?>%]</div>
             </div>
             <div class="row">
                 <div class="left">Bad Value</div>
-                <div class="middle"><?php echo Library_Analysis::hitResize($stats['cas_badval']); ?></div>
+                <div class="middle"><?php echo Library_Analysis::hitResize(isset($stats['cas_badval']) ? $stats['cas_badval'] : null); ?></div>
                 <div class="right">[<?php echo $stats['cas_badval_percent']; ?>%]</div>
             </div>
             <div class="row">
@@ -79,12 +79,12 @@
         <div class="container rounded">
             <div class="row">
                 <div class="left">Hits</div>
-                <div class="middle"><?php echo Library_Analysis::hitResize($stats['incr_hits']); ?></div>
+                <div class="middle"><?php echo Library_Analysis::hitResize(isset($stats['incr_hits']) ? $stats['incr_hits'] : null); ?></div>
                 <div class="right">[<?php echo $stats['incr_hits_percent']; ?>%]</div>
             </div>
             <div class="row">
                 <div class="left">Miss</div>
-                <div class="middle"><?php echo Library_Analysis::hitResize($stats['incr_misses']); ?></div>
+                <div class="middle"><?php echo Library_Analysis::hitResize(isset($stats['incr_misses']) ? $stats['incr_misses'] : null); ?></div>
                 <div class="right">[<?php echo $stats['incr_misses_percent']; ?>%]</div>
             </div>
             <div class="row">
@@ -98,12 +98,12 @@
         <div class="container rounded">
             <div class="row">
                 <div class="left">Hits</div>
-                <div class="middle"><?php echo Library_Analysis::hitResize($stats['decr_hits']); ?></div>
+                <div class="middle"><?php echo Library_Analysis::hitResize(isset($stats['decr_hits']) ? $stats['decr_hits'] : null); ?></div>
                 <div class="right">[<?php echo $stats['decr_hits_percent']; ?>%]</div>
             </div>
             <div class="row">
                 <div class="left">Miss</div>
-                <div class="middle"><?php echo Library_Analysis::hitResize($stats['decr_misses']); ?></div>
+                <div class="middle"><?php echo Library_Analysis::hitResize(isset($stats['decr_misses']) ? $stats['decr_misses']  : null); ?></div>
                 <div class="right">[<?php echo $stats['decr_misses_percent']; ?>%]</div>
             </div>
             <div class="row">
